@@ -1,3 +1,4 @@
+#Alperen-patient_DML
 INSERT INTO `cs320`.`patient` (`patient_id`, `patient_fname`, `patient_lname`, `blood_type`, `p_weight`, `p_height`) VALUES ('1', 'Ron', 'Swanson', 'ARh+', '92kg', '190cm');
 INSERT INTO `cs320`.`patient` (`patient_id`, `patient_fname`, `patient_lname`, `blood_type`, `p_weight`, `p_height`) VALUES ('2', 'April ', 'Ludgate', 'BRh+', '54kg', '150cm');
 INSERT INTO `cs320`.`patient` (`patient_id`, `patient_fname`, `patient_lname`, `blood_type`, `p_weight`, `p_height`) VALUES ('3', 'Leslie', 'Knope', 'ABRh+', '57kg', '155cm');
@@ -16,6 +17,11 @@ INSERT INTO `cs320`.`doctor` (`doctor_id`, `doctor_fname`, `doctor_lname`, `d_fi
 INSERT INTO `cs320`.`doctor` (`doctor_id`, `doctor_fname`, `doctor_lname`, `d_field`, `d_bloodtype`, `d_weight`, `d_height`) VALUES ('2', 'Ayberk', 'ORHON', 'general surgeon', 'ARh+', '85kg', '185cm');
 INSERT INTO `cs320`.`doctor` (`doctor_id`, `doctor_fname`, `doctor_lname`, `d_field`, `d_bloodtype`, `d_weight`, `d_height`) VALUES ('3', 'Maram', 'ELSEBAKHİ', 'ophthalmologist', 'ARh+', '60kg', '175cm');
 INSERT INTO `cs320`.`doctor` (`doctor_id`, `doctor_fname`, `doctor_lname`, `d_field`, `d_bloodtype`, `d_weight`, `d_height`) VALUES ('4', 'Erhan', 'Çekin', 'general practitioner', 'ARh+', '80kg', '180cm');
+
+#to be added by Alperen
+#doctors workhours for avalibility table
+
+
 
 
 #Maram-Patient
