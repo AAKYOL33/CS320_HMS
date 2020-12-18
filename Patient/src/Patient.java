@@ -56,45 +56,38 @@ public class Patient {
         System.out.println("Enter the doctor id of the doctor you want to make an appointment from: ");
         int doctor_id=scan.nextInt();
         if (doctor_id==1){
-            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id,polyclinic) VALUES(?,?,?,?)";
+            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id) VALUES(?,?,?)";
             statement1 = myConn.prepareStatement(action);
             statement1.setString(1, String.valueOf(LocalDate.now()));
             statement1.setInt(2, patient_id);
             statement1.setInt(3, doctor_id);
-            statement1.setString(4,"cardiology" );
             statement1.executeUpdate();
             System.out.println("New appointment!");
         }
         else if (doctor_id==2){
-            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id,polyclinic) VALUES(?,?,?,?)";
+            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id) VALUES(?,?,?)";
             statement1 = myConn.prepareStatement(action);
             statement1.setString(1, String.valueOf(LocalDate.now()));
             statement1.setInt(2, patient_id);
             statement1.setInt(3, doctor_id);
-            statement1.setString(3,"general surgery" );
-            statement1.setString(4, String.valueOf(LocalDate.now()));
             statement1.executeUpdate();
             System.out.println("New appointment!");
         }
         else if (doctor_id==3){
-            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id,polyclinic) VALUES(?,?,?,?)";
+            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id) VALUES(?,?,?)";
             statement1 = myConn.prepareStatement(action);
             statement1.setString(1, String.valueOf(LocalDate.now()));
             statement1.setInt(2, patient_id);
             statement1.setInt(3, doctor_id);
-            statement1.setString(3,"ophthalmology" );
-            statement1.setString(4, String.valueOf(LocalDate.now()));
             statement1.executeUpdate();
             System.out.println("New appointment!");
         }
         else if (doctor_id==4){
-            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id,polyclinic) VALUES(?,?,?,?)";
+            String action1 = "INSERT INTO cs320.appointment(appointment_date,patient_id,doctor_id) VALUES(?,?,?)";
             statement1 = myConn.prepareStatement(action);
             statement1.setString(1, String.valueOf(LocalDate.now()));
             statement1.setInt(2, patient_id);
             statement1.setInt(3, doctor_id);
-            statement1.setString(3,"general practitionery" );
-            statement1.setString(4, String.valueOf(LocalDate.now()));
             statement1.executeUpdate();
             System.out.println("New appointment!");
         }
